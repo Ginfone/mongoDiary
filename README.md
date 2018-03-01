@@ -10,3 +10,9 @@
 
 
 ## Note
+  * mongoDB database
+
+    ```
+    use *databasename*
+    
+    ```
