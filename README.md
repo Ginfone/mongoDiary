@@ -10,9 +10,15 @@
 
 
 ## Note
-  * mongoDB database
-
+  * Create & Switch Database
     ```
-    use *databasename*
-    
+    use <database>
+    ```
+  * To display database you are using
+    ```
+    db
+    ```
+  * To display all Database
+    ```
+    show dbs
     ```
