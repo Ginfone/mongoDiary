@@ -10,15 +10,35 @@
 
 
 ## Note
-  * Create & Switch Database
-    ```
-    use <database>
-    ```
-  * To display database you are using
-    ```
-    db
-    ```
-  * To display all database
-    ```
-    show dbs
-    ```
+  * ### Database
+    * Create
+      * Create & Switch Database
+        ```
+        use <database>
+        ```
+    * Query
+      * To display database you are using
+        ```
+        db
+        ```
+      * To display all database
+        ```
+        show dbs
+        ```
+        or
+
+        ```
+        show databases
+        ```
+    * Delete
+      * Delete
+        ```
+        use <database>
+        db.dropDatabase();
+        ```
+  * ### Collections (Tables)
+    * Create
+      * Create table
+        ```
+        db.<collection>.insert({<property>:<value>})
+        ```
