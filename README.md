@@ -79,10 +79,14 @@
         ```javascript
         //equals
         db.<collection>.find({<property>:{ $in ['<value1>', '<value2>'] } } )
+
         //or
         db.<collection>.find({<property>:{ $or ['<value1>','<value2>'] } } )
+
         //operation
         db.<collection>.find({<property>:{ $lt : <number>} } ) //less than
         db.<collection>.find({<property>:{ $gt : <number>} } ) //great than
+
         //RegExp
-        db.<collection>.find({<property>:{$regex: /d/} } )
+        db.<collection>.find({<property>:{$regex: /pattern/} } )
+        ```
