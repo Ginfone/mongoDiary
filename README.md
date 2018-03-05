@@ -12,7 +12,14 @@
     主要考察数据库的写入以及日期格式的处理
 
 
-## Note
+## Theory
+  * no predefined schema
+  > which makes more flexible.
+
+  * It's document-oriented data model makes it easier for it to split up data across multiple server
+  * Case-sentive && Type-sensitive
+
+## Usage
   * ### Database
     * Create
       * Create & Switch Database
@@ -43,7 +50,7 @@
     * Create
       * Create table
         ```
-        db.<collection>.insert({<property>:'<value>'})
+        db.<collection>.insert({<key>:'<value>'})
         ```
       * Delete table
         ```
@@ -53,14 +60,14 @@
     * Create
       * Insert Document
         ```
-        db.<collection>.insert({<property>:'<value'})
+        db.<collection>.insert({<key>:'<value'})
         ```
       * Insert Multiple Documents
         ```
         db.<collection>.insert(
             [
-              {<property>:'<value>'},
-              {<property>:'<value>'},
+              {<key>:'<value>'},
+              {<key>:'<value>'},
             ]
           )
         ```
@@ -73,20 +80,20 @@
       * List specific document
         ```
         use <database>
-        db.<collection>.find({<property>:'<value>'})
+        db.<collection>.find({<key>:'<value>'})
         ```
       * List spcific documents with requirement
         ```javascript
         //equals
-        db.<collection>.find({<property>:{ $in ['<value1>', '<value2>'] } } )
+        db.<collection>.find({<key>:{ $in ['<value1>', '<value2>'] } } )
 
         //or
-        db.<collection>.find({<property>:{ $or ['<value1>','<value2>'] } } )
+        db.<collection>.find({<key>:{ $or ['<value1>','<value2>'] } } )
 
         //operation
-        db.<collection>.find({<property>:{ $lt : <number>} } ) //less than
-        db.<collection>.find({<property>:{ $gt : <number>} } ) //great than
+        db.<collection>.find({<key>:{ $lt : <number>} } ) //less than
+        db.<collection>.find({<key>:{ $gt : <number>} } ) //great than
 
         //RegExp
-        db.<collection>.find({<property>:{$regex: /pattern/} } )
+        db.<collection>.find({<key>:{$regex: /pattern/} } )
         ```
