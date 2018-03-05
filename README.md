@@ -19,6 +19,15 @@
   * It's document-oriented data model makes it easier for it to split up data across multiple server
   * Case-sentive && Type-sensitive
 
+  * Subcolletion
+  > Seperater collection by . character.
+    subcollection is a great way to store data in mongoDB. For example, blog.posts , blog.authors
+
+  * One database for one application is recommend.
+  * To keep it simple ,try to just use lowercase character.
+
+
+
 ## Usage
   * ### Database
     * Create
