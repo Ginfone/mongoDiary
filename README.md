@@ -106,5 +106,12 @@
         db.<collection>.find({<key>:{$regex: /pattern/} } )
         ```
 
+    * Update
+      * update single document
+        ```
+        db.<collection>.update({<key>:<value>},{$set:{<key>:<value}})
+        ```
+
+
 ## mongoose
   * mongoose will makes the correct plural of the collection.
