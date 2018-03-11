@@ -27,7 +27,6 @@
   * To keep it simple ,try to just use lowercase character.
 
 
-
 ## Usage
   * ### Database
     * Create
@@ -106,3 +105,6 @@
         //RegExp
         db.<collection>.find({<key>:{$regex: /pattern/} } )
         ```
+
+## mongoose
+  * mongoose will makes the correct plural of the collection.
